@@ -1,27 +1,28 @@
 class Dynamate < Formula
   desc "Terminal UI for DynamoDB exploration and querying"
   homepage "https://github.com/fiam/dynamate"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/fiam/dynamate/releases/download/v0.1.0/dynamate-aarch64-apple-darwin.tar.gz"
-      sha256 "d6d134bdbf115d19107d0f718c091603c988bf5907a7a4917158b21eb7c3aed7"
+      url "https://github.com/fiam/dynamate/releases/download/v0.2.0/dynamate-aarch64-apple-darwin.tar.gz"
+      sha256 "5a5f77eaa18b9c70d93378c9b5cd9d8f45f6bb1ceb63bbd654ad69d3cec64a65"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fiam/dynamate/releases/download/v0.1.0/dynamate-x86_64-apple-darwin.tar.gz"
-      sha256 "e1897c3a538340a80abfcd4a191a264b70c5cfddaa118d4825a7584bee1cfdad"
+      url "https://github.com/fiam/dynamate/releases/download/v0.2.0/dynamate-x86_64-apple-darwin.tar.gz"
+      sha256 "5ca2d0521e02e09466c2fd5f10b58143635d445f0ab2892ab604e851c7f977f2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/fiam/dynamate/releases/download/v0.1.0/dynamate-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5b1ee8ce05a7afa5c36e23687356abe7f49316b554ee2970376c8f52bbf9f960"
+      url "https://github.com/fiam/dynamate/releases/download/v0.2.0/dynamate-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3f62491b8973b0e0fd7e7c36ad3fb559e2fbe1b53da892be491615445fc42a73"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fiam/dynamate/releases/download/v0.1.0/dynamate-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c594eeb87d69195a1252cebe1ff2de7f03dbf9ecd3cd730f007642fcb4995ddb"
+      url "https://github.com/fiam/dynamate/releases/download/v0.2.0/dynamate-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ef746179d21354752e8cabb89b971b28853d0f61dbdfa92a897f580a84c3026b"
     end
   end
+  license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
